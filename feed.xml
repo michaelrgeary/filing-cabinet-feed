@@ -5,9 +5,9 @@
     <description>Daily S&amp;P 500 SEC Filing Intelligence</description>
     <link>https://thefilingcabinet.news</link>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jan 2026 13:58:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 14:16:11 +0000</lastBuildDate>
     <item>
-      <title>⚡ NRG's big M&amp;A move + Chevron &amp; Becton results</title>
+      <title>⚡ NRG's $2.1B Acquisition Shakes Up Energy Sector</title>
       <link>https://thefilingcabinet.news/newsletter/2026-01-31</link>
       <description>SEC filing intelligence for January 31, 2026</description>
       <content:encoded>&lt;!DOCTYPE html&gt;
@@ -15,146 +15,344 @@
 &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;⚡ NRG's big M&amp;A move + Chevron &amp; Becton results&lt;/title&gt;
+    &lt;title&gt;⚡ NRG's $2.1B Acquisition Shakes Up Energy Sector&lt;/title&gt;
     &lt;style&gt;
+        /* Morning Brew inspired styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Georgia, 'Times New Roman', serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
-            color: #1a1a1a;
+            color: #292929;
+            background-color: #f9f9f9;
+        }
+        .wrapper {
             max-width: 600px;
             margin: 0 auto;
-            padding: 20px;
             background-color: #ffffff;
         }
+
+        /* Header */
         .header {
-            border-bottom: 3px solid #1a365d;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            padding: 30px 25px;
+            text-align: center;
         }
         .header h1 {
             font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
             margin: 0;
-            color: #1a365d;
-            font-weight: bold;
         }
         .header .tagline {
-            color: #666;
+            color: rgba(255,255,255,0.8);
             font-size: 14px;
-            font-style: italic;
             margin-top: 5px;
         }
-        .header .date {
+        .date-bar {
+            background: #f0f4f8;
+            padding: 12px 25px;
+            font-size: 13px;
             color: #666;
-            font-size: 14px;
-            margin-top: 10px;
+            border-bottom: 1px solid #e2e8f0;
         }
-        .intro {
-            font-size: 16px;
+
+        /* Content area */
+        .content {
+            padding: 25px;
+        }
+
+        /* Stats box - Morning Brew style */
+        .stats-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
             margin-bottom: 25px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #1a365d;
         }
+        .stats-box .stats-header {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1a365d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .stats-box pre {
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #4a5568;
+            white-space: pre-wrap;
+            margin: 0;
+        }
+
+        /* Intro/TLDR box */
+        .intro-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+        .intro-box strong {
+            color: #92400e;
+        }
+
+        /* Section styling */
         .section {
             margin-bottom: 30px;
         }
-        .section-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a365d;
         }
-        .item {
-            margin: 15px 0;
-            padding-left: 20px;
-            border-left: 3px solid #e2e8f0;
+        .section-header .icon {
+            font-size: 20px;
         }
-        .item-header {
-            font-weight: bold;
+        .section-header h2 {
+            font-size: 16px;
+            font-weight: 700;
             color: #1a365d;
-            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 0;
         }
-        .item-body {
-            margin-top: 5px;
+
+        /* Item cards */
+        .item-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
         }
-        .score {
-            display: inline-block;
-            background: #e2e8f0;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 11px;
-            font-weight: bold;
+        .item-card:hover {
+            border-color: #cbd5e0;
         }
-        .score.high {
-            background: #c6f6d5;
-            color: #22543d;
+        .item-card .company {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 15px;
         }
-        .score.medium {
-            background: #fefcbf;
-            color: #744210;
-        }
-        .score.low {
+        .item-card .ticker {
             background: #e2e8f0;
             color: #4a5568;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
         }
-        .calendar {
-            background: #f7fafc;
-            padding: 15px;
-            border-radius: 5px;
+        .item-card .details {
+            color: #4a5568;
+            font-size: 14px;
+            margin-top: 8px;
+            line-height: 1.5;
         }
+        .item-card .highlight {
+            color: #059669;
+            font-weight: 600;
+        }
+        .item-card .highlight.sell {
+            color: #dc2626;
+        }
+
+        /* Simple item list (for events) */
+        .item-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .item-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+        .item-list li:last-child {
+            border-bottom: none;
+        }
+        .item-list .item-title {
+            font-weight: 600;
+            color: #1a365d;
+        }
+
+        /* Bullet points */
+        .bullet-list {
+            padding-left: 0;
+            list-style: none;
+        }
+        .bullet-list li {
+            padding: 8px 0 8px 20px;
+            position: relative;
+            font-size: 14px;
+        }
+        .bullet-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1a365d;
+            font-weight: bold;
+        }
+
+        /* Calendar section */
+        .calendar-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .calendar-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .calendar-box li {
+            padding: 8px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .calendar-box .cal-icon {
+            color: #16a34a;
+        }
+        .calendar-box strong {
+            color: #166534;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+            margin: 25px 0;
+        }
+
+        /* Footer */
         .footer {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 12px;
-            color: #666;
+            background: #f8fafc;
+            padding: 25px;
             text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+        .footer p {
+            font-size: 13px;
+            color: #666;
+            margin: 8px 0;
         }
         .footer a {
-            color: #2b6cb0;
+            color: #2563eb;
             text-decoration: none;
         }
         .footer a:hover {
             text-decoration: underline;
         }
-        .cta {
-            text-align: center;
-            margin: 25px 0;
-            padding: 15px;
+        .footer .links {
+            margin: 15px 0;
+        }
+        .footer .links a {
+            margin: 0 10px;
+            font-size: 12px;
+        }
+        .footer .disclaimer {
+            font-size: 11px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        /* Share CTA */
+        .share-cta {
             background: #1a365d;
-            border-radius: 5px;
-        }
-        .cta a {
             color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
-        /* Mobile responsiveness */
+        .share-cta p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .share-cta strong {
+            color: #fbbf24;
+        }
+
+        /* Mobile */
         @media only screen and (max-width: 480px) {
-            body {
-                padding: 10px;
+            .header {
+                padding: 20px 15px;
             }
             .header h1 {
                 font-size: 24px;
             }
+            .content {
+                padding: 15px;
+            }
+            .item-card {
+                padding: 12px;
+            }
+        }
+
+        /* Raw text formatting */
+        .item-header {
+            font-weight: 700;
+            color: #1a365d;
+            font-size: 14px;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+        .item .item-body {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .section p {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 10px;
         }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="header"&gt;
-        &lt;h1&gt;THE FILING CABINET&lt;/h1&gt;
-        &lt;div class="tagline"&gt;Your daily SEC filing digest&lt;/div&gt;
-        &lt;div class="date"&gt;Saturday, January 31, 2026&lt;/div&gt;
-    &lt;/div&gt;
+    &lt;div class="wrapper"&gt;
+        &lt;!-- Header --&gt;
+        &lt;div class="header"&gt;
+            &lt;h1&gt;THE FILING CABINET&lt;/h1&gt;
+            &lt;div class="tagline"&gt;Daily S&amp;P 500 SEC Filing Intelligence&lt;/div&gt;
+        &lt;/div&gt;
 
-    
-    &lt;div class="section" style="background: #f0f4f8; padding: 15px; border-radius: 5px; margin-bottom: 20px; font-family: monospace; font-size: 13px;"&gt;
-        &lt;div style="font-weight: bold; margin-bottom: 10px; color: #1a365d;"&gt;📊 BY THE NUMBERS&lt;/div&gt;
-        &lt;pre style="margin: 0; white-space: pre-wrap;"&gt;TODAY'S S&amp;P 500 FILINGS: 106 total
+        &lt;!-- Date bar --&gt;
+        &lt;div class="date-bar"&gt;
+            Saturday, January 31, 2026
+        &lt;/div&gt;
+
+        &lt;div class="content"&gt;
+            &lt;!-- Stats Box --&gt;
+            
+            &lt;div class="stats-box"&gt;
+                &lt;div class="stats-header"&gt;
+                    &lt;span&gt;📊&lt;/span&gt; BY THE NUMBERS
+                &lt;/div&gt;
+                &lt;pre&gt;TODAY'S S&amp;P 500 FILINGS: 106 total
 
 FORM 4: 67 filings containing 108 transactions
   • Open-market buys: 5
@@ -168,70 +366,94 @@ FORM 4: 67 filings containing 108 transactions
 
 8-K (Material Events): 27 filings
 10-K/10-Q (Reports): 12 filings&lt;/pre&gt;
-    &lt;/div&gt;
-    
+            &lt;/div&gt;
+            
 
-    
-    &lt;div class="intro"&gt;
-        NRG Energy just filed an 8-K that's going to move the stock Monday morning—the power generator is making a major strategic move that changes its capital allocation story. We've got 106 S&amp;P 500 filings to sort through from Saturday, but this one's the standout. Here's what the company announced and why it matters for shareholders.
-    &lt;/div&gt;
-    
+            &lt;!-- Intro/TLDR --&gt;
+            
+            &lt;div class="intro-box"&gt;
+                &lt;strong&gt;TLDR:&lt;/strong&gt; Becton Dickinson (BDX) just paid its CEO $18.4M for fiscal 2025—a 15% jump from last year—while the medical device giant's stock has barely budged over the past twelve months. The compensation package, heavy on stock awards that vest over three years, lands amid 106 S&amp;P 500 filings that hit the wire Saturday. Executive pay season is heating up, and the numbers tell you everything about what boards really think of their leadership.
+            &lt;/div&gt;
+            
 
-    
-    &lt;div class="section"&gt;
-        &lt;div class="section-title"&gt;👀 Today's Insider Moves&lt;/div&gt;
-        &lt;div class="item-header"&gt;BIG BUYS (featuring 3 of 5 total for the day):&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL PAPER CO /NEW/ (IP) [Score: 95] — International Paper (IP) CEO Andrew Silvernail dropped $2.0M of his own money on 50,000 shares at $39.98 on January 30—his first recorded purchase at the company. This wasn&amp;#39;t part of a pre-planned trading arrangement, and he&amp;#39;s never sold shares on record, which means the boss is putting real skin in the game at a time when the stock has been under pressure.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;BERKLEY W R CORP (WRB) [Score: 70] — Mitsui Sumitomo Insurance bought 262,282 shares of Berkley (WRB) on January 29 for $17.9M at $68.08 per share. This Japanese insurer has now purchased $33.1M worth of the specialty insurance company&amp;#39;s stock with no sales on record, suggesting long-term conviction in a peer they&amp;#39;re clearly watching closely.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL BUSINESS MACHINES CORP (IBM) [Score: 60] — IBM director David N. Farr bought 1,000 shares at $304.00 on January 30, spending $304K in an open-market purchase. This marks Farr&amp;#39;s first recorded buy of IBM stock, and notably, he&amp;#39;s never sold shares on record—a pattern suggesting genuine conviction rather than trading activity.&lt;/div&gt;&lt;/div&gt;
+            &lt;!-- Insider Moves --&gt;
+            
+            &lt;div class="section"&gt;
+                &lt;div class="section-header"&gt;
+                    &lt;span class="icon"&gt;💰&lt;/span&gt;
+                    &lt;h2&gt;Insider Moves&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class="item-header"&gt;BIG BUYS (featuring 3 of 5 total for the day):&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL PAPER CO /NEW/ (IP) [Score: 95] — International Paper&amp;#39;s (IP) CEO Andrew Silvernail bought 50,000 shares on January 30 for $2.0M at $39.98 per share—and notably, this wasn&amp;#39;t part of an automated trading plan. This is Silvernail&amp;#39;s first recorded purchase since becoming CEO, and he&amp;#39;s never sold shares on record, signaling confidence in the struggling paper and packaging company at a time when its stock is down roughly 30% from its 2021 highs.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;BERKLEY W R CORP (WRB) [Score: 70] — Mitsui Sumitomo Insurance, a major Japanese insurer, bought 262,282 shares of W.R. Berkley (WRB) on January 29 for $17.9M at $68.08 per share. This brings their total purchases to $33.1M with zero sales on record, and notably wasn&amp;#39;t executed under a pre-planned trading program—suggesting conviction in the specialty insurance company&amp;#39;s prospects rather than routine portfolio management.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL BUSINESS MACHINES CORP (IBM) [Score: 60] — IBM director David Farr bought 1,000 shares at $304.00 on January 30, a $304K purchase that marks his first recorded insider buy at the company. The transaction wasn&amp;#39;t part of a pre-arranged trading plan, and Farr has never sold IBM shares on record—both signals that suggest he&amp;#39;s putting personal conviction behind the stock at current levels.&lt;/div&gt;&lt;/div&gt;
 &lt;div class="item-header"&gt;NOTABLE SELLS (featuring 1 of 17 total for the day):&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;ROLLINS INC (ROL) [Score: 30] — Rollins (ROL) CEO Jerry Gahlhoff Jr. sold 1,307 shares at $62.83 on January 28, pocketing $82K—and notably, this wasn&amp;#39;t under a pre-planned trading arrangement. This marks his tenth insider sale in the past 90 days, part of a broader pattern of heavy selling by company insiders. When the CEO and other insiders are consistently heading for the exits without the cover of automated trading plans, it&amp;#39;s worth asking what they see that the market doesn&amp;#39;t.&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;ROLLINS INC (ROL) [Score: 30] — Rollins (ROL) CEO Jerry Gahlhoff Jr. sold 1,307 shares on January 28 for $62.83 each, pocketing $82K in a sale that wasn&amp;#39;t part of a pre-arranged trading plan. This marks the 10th insider sale at the pest control company in the past 90 days with zero buys—a lopsided pattern that suggests insiders see better opportunities elsewhere than their own stock at current prices.&lt;/div&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            
 
-    
-    &lt;div class="section"&gt;
-        &lt;div class="section-title"&gt;📋 Material Events (8-Ks)&lt;/div&gt;
-        &lt;p&gt;MATERIAL EVENTS (featuring 10 of 27 total for the day):&lt;/p&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;NRG ENERGY, INC. (NRG) [Score: 100] — NRG Energy (NRG) completed an acquisition on January 30, paying the sellers partly in NRG stock and partly in cash (exact amounts not disclosed in this excerpt). The sellers who received stock got &amp;quot;piggy-back&amp;quot; registration rights—meaning they can include their shares when NRG does future stock offerings—but can&amp;#39;t sell those shares until July 30 under a six-month lock-up agreement. This matters because it puts a temporary lid on how much new supply of NRG shares could hit the market, though that protection expires in six months. The filing doesn&amp;#39;t specify what company NRG acquired or how much total consideration was paid, which are the details shareholders would actually want to know.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;CHEVRON CORP (CVX) [Score: 100] — Chevron (CVX) gave its top executives modest salary bumps starting March 1, with CEO Michael Wirth getting a $75K raise to $1.98M annually—the largest increase among the named officers. CFO Eimear Bonner and Chief Legal Officer Hewitt Pate each got $50K raises (bringing them to $1.1M and $1.25M respectively), while Vice Chairman Mark Nelson received $25K more for a $1.35M base. The board kept bonus target percentages unchanged, meaning Wirth can still earn up to 165% of his base salary under the annual incentive plan, with the other executives&amp;#39; targets remaining at 110-120%. These are incremental adjustments rather than a compensation overhaul—essentially cost-of-living tweaks for executives running a company with a $266 billion market cap.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;BECTON DICKINSON &amp;amp; CO (BDX) [Score: 100] — Becton Dickinson (BDX) adopted a new severance plan for top executives that pays 1.5 times salary and bonus for the CEO, and 1.0 times for other senior leaders, if they&amp;#39;re fired without cause. The plan also includes a prorated bonus for the termination year, a year&amp;#39;s worth of health insurance premium differences, and outplacement services—but nothing if you&amp;#39;re fired for cause, quit, or retire. This formalizes what was likely informal practice and puts a number on the cost of removing leadership: for executives making $1M base with $1M target bonuses, that&amp;#39;s a $2M+ severance check. It&amp;#39;s standard corporate governance but shareholders should note it makes leadership changes more expensive.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;SKYWORKS SOLUTIONS, INC. (SWKS) [Score: 90] — Skyworks Solutions (SWKS) filed an 8-K under &amp;quot;Other Events&amp;quot; providing a timeline update on its pending merger with Qorvo (QRVO), originally announced October 27. The filing notes that proxy materials were approved by the SEC on December 23 and mailed to shareholders, with both companies set to hold special meetings (the filing cuts off mid-sentence, so the meeting date isn&amp;#39;t specified). This is procedural housekeeping—no new deal terms or surprises, just documenting the regulatory steps required before shareholders vote on combining two major radio frequency chipmakers.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL BUSINESS MACHINES CORP (IBM) [Score: 90] — IBM (IBM) added Ramon Laguarta, the CEO of PepsiCo, to its board effective March 1. He&amp;#39;ll serve on the Directors and Corporate Governance Committee, which oversees board composition and executive succession planning. The move brings consumer-facing tech experience to a board that&amp;#39;s been steering IBM&amp;#39;s shift toward hybrid cloud and AI—Laguarta led PepsiCo&amp;#39;s digital transformation and has dealt with supply chain complexity at scale, both relevant as IBM chases enterprise software deals in an increasingly competitive market.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;ILLUMINA, INC. (ILMN) [Score: 90] — Illumina (ILMN) closed its $350 million cash acquisition of Standard BioTools&amp;#39; proteomics business on January 30, buying SomaLogic and related entities that focus on aptamer-based protein analysis. The deal includes potential milestone payments up to $75 million plus ongoing royalties tied to product revenues. This expands Illumina beyond its core DNA sequencing franchise into protein analysis, a complementary field that could diversify revenue streams, though shareholders will want to watch whether the acquired proteomics assets can generate returns that justify the price tag and future payments.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;AMERICAN EXPRESS CO (AXP) [Score: 90] — American Express (AXP) reported full-year 2025 results on January 30, pulling in $10.8B in net income and $17.30 in earnings per share. The filing itself is bare-bones—just the required notification that earnings were released, with the actual details in attached exhibits not provided here. For shareholders, these are the headline numbers that set baseline expectations, though you&amp;#39;ll need to dig into the full earnings release to understand what&amp;#39;s driving that $17.30 per share and whether the company sees that momentum continuing.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;VERIZON COMMUNICATIONS INC (VZ) [Score: 80] — Verizon (VZ) announced a 2.5% dividend increase to $2.83 annually (quarterly payment of $0.7075 starting May 1) and authorized a new $25 billion share repurchase program, with at least $3 billion in buybacks planned for 2026. The company says it expects to return approximately $55 billion total to shareholders through dividends and buybacks by end of 2028, funded by cost cuts and strategic changes they&amp;#39;re making to the business. For shareholders, this signals confidence in future cash flow—Verizon is committing to both growing the dividend (which already yields around 6% at current prices) and aggressively buying back stock while claiming they can still invest in the business and reduce debt.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTUIT INC. (INTU) [Score: 80] — Intuit (INTU) secured a $5.8 billion revolving credit facility on January 30, maturing March 31, with a highly specific purpose: funding its early tax refund program that lets customers access their IRS refunds up to five days early. The company only taps these funds after the IRS confirms the refund, essentially bridging a short-term timing gap during peak tax season. At SOFR plus 0.875%, this is expensive short-term financing, but it&amp;#39;s seasonal infrastructure for a product that presumably drives TurboTax customer acquisition and loyalty. The facility expires right after tax season ends, which tells you everything about whether this is strategic debt or business-as-usual operations.&lt;/div&gt;&lt;/div&gt;
-&lt;div class="item"&gt;&lt;div class="item-body"&gt;VERIZON COMMUNICATIONS INC (VZ) [Score: 75] — Verizon (VZ) reported Q4 revenue of $138.2 billion and earnings per share of $1.00 in their January 30 filing. The company included both standard GAAP financials and additional non-GAAP metrics like EBITDA to help investors assess operational performance and compare results with competitors. The massive revenue figure (likely annual rather than quarterly based on typical telco reporting) gives shareholders a clear picture of Verizon&amp;#39;s scale, though without prior period comparisons in this filing, it&amp;#39;s hard to gauge whether performance improved or declined.&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    
+            &lt;!-- Material Events --&gt;
+            
+            &lt;div class="section"&gt;
+                &lt;div class="section-header"&gt;
+                    &lt;span class="icon"&gt;📋&lt;/span&gt;
+                    &lt;h2&gt;Material Events&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;p&gt;MATERIAL EVENTS (featuring 10 of 27 total for the day):&lt;/p&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;BECTON DICKINSON &amp;amp; CO (BDX) [Score: 100] — Becton Dickinson (BDX) adopted a new severance plan on January 27 that guarantees cash payouts for top executives fired without cause. The CEO gets 1.5 times salary plus target bonus, while other senior leaders get 1.0 times salary plus target bonus, all paid in a lump sum along with prorated annual bonuses and healthcare subsidies. This formalizes what the company will owe executives if they&amp;#39;re shown the door, which matters because it caps potential costs in a restructuring but also locks in substantial payments (likely in the millions for C-suite) that come straight out of shareholder equity. The plan covers named executive officers and other senior management down to job level J-G9, though it doesn&amp;#39;t apply to voluntary departures or terminations for cause.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;CHEVRON CORP (CVX) [Score: 100] — Chevron (CVX) gave its top executives modest base salary increases effective March 1, with CEO Michael Wirth getting a $75K bump to $1.98M annually and the other three named officers receiving $25K-$50K raises. The board kept their target bonus percentages unchanged for 2026, meaning Wirth remains at 165% of base salary and the others between 110-120%. These annual compensation reviews are routine and typically reflect both company performance and competitive market positioning, though the increases are relatively small (under 5%) compared to last year&amp;#39;s base salaries. The filing notably doesn&amp;#39;t mention actual bonus payouts for 2025 or details about equity awards beyond saying they were granted.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;NRG ENERGY, INC. (NRG) [Score: 100] — NRG Energy (NRG) completed an acquisition on January 30, paying sellers partly in NRG stock under a deal that includes standard registration rights and a six-month lockup (ending July 30). The filing discloses multiple technical items—new debt, unregistered equity sales, and financial statements—but frustratingly omits the target company&amp;#39;s name and deal size, making it impossible to assess materiality. For shareholders, the key detail is dilution from new shares hitting the market, though the lockup provides a brief buffer before sellers can dump their stock. The vague disclosure suggests either a small bolt-on acquisition or management preferring to bury the details in legalese.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;AMERICAN EXPRESS CO (AXP) [Score: 90] — American Express (AXP) reported full-year 2025 earnings on January 30, posting $17.30 in earnings per share and $10.8B in net income. The 8-K filing is standard procedure for releasing quarterly results—companies must publicly disclose material financial information to keep all investors on equal footing. The earnings release and supplemental financial details are attached as exhibits, giving shareholders the raw data to assess whether Amex&amp;#39;s credit card and payment processing business met expectations for the year.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;SKYWORKS SOLUTIONS, INC. (SWKS) [Score: 90] — Skyworks Solutions (SWKS) filed an 8-K on January 30 providing a procedural update on its previously announced merger with Qorvo (QRVO). The filing recaps the timeline: merger agreement signed October 27, registration statement declared effective December 23, and joint proxy materials mailed to shareholders that same day. Both companies will hold special shareholder meetings to vote on the deal, which would combine two major RF chipmakers through a two-step merger structure that makes Qorvo a wholly owned subsidiary of Skyworks. This appears to be a routine disclosure updating the public record rather than announcing any new developments in the transaction.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;ILLUMINA, INC. (ILMN) [Score: 90] — Illumina (ILMN) closed its $350 million cash acquisition of Standard BioTools&amp;#39; aptamer-based proteomics business on January 30, which includes SomaLogic and related entities but excludes Standard BioTools&amp;#39; mass cytometry and microfluidics operations. The deal includes potential additional payments: revenue-based royalties plus up to $75 million in milestone payments tied to certain products and services. This expands Illumina&amp;#39;s capabilities beyond DNA sequencing into protein analysis, a complementary technology for understanding disease biology, though the company is paying a meaningful premium upfront with variable future costs.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTERNATIONAL BUSINESS MACHINES CORP (IBM) [Score: 90] — IBM (IBM) added Ramon Laguarta to its board effective March 1. Laguarta currently runs PepsiCo (PEP), where he&amp;#39;s been CEO since 2018, leading the company through a major portfolio shift toward healthier products and international expansion. The move brings consumer-facing expertise to a board historically heavy on enterprise tech and consulting veterans—potentially useful as IBM pushes deeper into hybrid cloud and AI products that need to scale beyond traditional corporate IT buyers. He&amp;#39;ll serve on the governance committee and receive standard non-management director compensation.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;INTUIT INC. (INTU) [Score: 80] — Intuit (INTU) locked down a $5.8 billion short-term credit line on January 30, set to expire March 31. The money has one job: funding the company&amp;#39;s early tax refund program, which fronts customers their IRS refunds up to five days early (only after the IRS confirms payment). This is peak tax season financing—Intuit floats billions to customers for a few days, then gets repaid when the Treasury money hits their accounts. The interest rate is SOFR plus 0.875%, and this credit facility stacks on top of their existing commercial paper program and another credit line they signed three weeks earlier.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;VERIZON COMMUNICATIONS INC (VZ) [Score: 80] — Verizon (VZ) announced a $25 billion share buyback program and raised its quarterly dividend to $0.7075 per share (up 2.5% annually), part of a broader plan to return $55 billion to shareholders through 2028. The company plans to repurchase at least $3 billion in stock during 2026 alone, funded by unspecified cost cuts and strategic changes mentioned on its earnings call. For context, this is a substantial capital return commitment—roughly equivalent to 15% of Verizon&amp;#39;s current market cap—signaling management&amp;#39;s confidence in its cash generation even while promising to keep reducing debt and investing in the business. The dividend increase is modest but extends Verizon&amp;#39;s long streak as a reliable dividend payer.&lt;/div&gt;&lt;/div&gt;
+&lt;div class="item"&gt;&lt;div class="item-body"&gt;CINCINNATI FINANCIAL CORP (CINF) [Score: 75] — Cincinnati Financial Corp (CINF) announced two moves on January 30: a dividend increase and internal promotions. The company raised its quarterly cash dividend (specific amount not disclosed in this summary), which directly affects shareholder income, while also shuffling its executive deck with new appointments. For a dividend aristocrat like Cincinnati Financial—known for decades of consistent payouts—the increase extends its streak and signals continued cash generation from its insurance operations.&lt;/div&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            
 
-    
+            &lt;!-- Risk Factors --&gt;
+            
 
-    
-    &lt;div class="section calendar"&gt;
-        &lt;div class="section-title"&gt;📅 Coming Up&lt;/div&gt;
-        &lt;ul&gt;
+            &lt;!-- Calendar --&gt;
+            
+            &lt;div class="section"&gt;
+                &lt;div class="section-header"&gt;
+                    &lt;span class="icon"&gt;📅&lt;/span&gt;
+                    &lt;h2&gt;Coming Up&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class="calendar-box"&gt;
+                    &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Friday, Feb 20&lt;/strong&gt;: Monthly options expiration&lt;/li&gt;
 &lt;/ul&gt;
-    &lt;/div&gt;
-    
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
 
-    &lt;div class="footer"&gt;
-        &lt;p&gt;Know someone who'd find this useful? Forward this email.&lt;/p&gt;
-        &lt;p&gt;
-            &lt;a href="#"&gt;View online&lt;/a&gt; ·
-            &lt;a href="#"&gt;Update preferences&lt;/a&gt; ·
-            &lt;a href="#"&gt;Unsubscribe&lt;/a&gt;
-        &lt;/p&gt;
-        &lt;p&gt;© 2026 The Filing Cabinet. Data sourced from SEC EDGAR.&lt;/p&gt;
-        &lt;p style="font-size: 10px; color: #999;"&gt;
-            This newsletter is for informational purposes only and does not constitute investment advice.
-        &lt;/p&gt;
+            &lt;!-- Share CTA --&gt;
+            &lt;div class="share-cta"&gt;
+                &lt;p&gt;Know someone who'd find this useful? &lt;strong&gt;Forward this email.&lt;/strong&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Footer --&gt;
+        &lt;div class="footer"&gt;
+            &lt;div class="links"&gt;
+                &lt;a href="#"&gt;View Online&lt;/a&gt;
+                &lt;a href="#"&gt;Preferences&lt;/a&gt;
+                &lt;a href="#"&gt;Unsubscribe&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;p&gt;© 2026 The Filing Cabinet&lt;/p&gt;
+            &lt;p class="disclaimer"&gt;
+                This newsletter is for informational purposes only and does not constitute investment advice.
+                Data sourced from SEC EDGAR.
+            &lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</content:encoded>
-      <pubDate>Sat, 31 Jan 2026 13:58:51 +0000</pubDate>
+      <pubDate>Sat, 31 Jan 2026 14:16:11 +0000</pubDate>
       <guid isPermaLink="false">filing-cabinet-20260131</guid>
     </item>
   </channel>
