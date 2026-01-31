@@ -5,5 +5,14 @@
     <description>Daily S&amp;P 500 SEC Filing Intelligence</description>
     <link>https://thefilingcabinet.news</link>
     <language>en-us</language>
+    <lastBuildDate>Sat, 31 Jan 2026 13:34:33 +0000</lastBuildDate>
+    <item>
+      <title>The Filing Cabinet - Test</title>
+      <link>https://thefilingcabinet.news/newsletter/2026-01-31</link>
+      <description>SEC filing intelligence for January 31, 2026</description>
+      <content:encoded>&lt;h1&gt;Test Newsletter&lt;/h1&gt;&lt;p&gt;Pipeline is working!&lt;/p&gt;</content:encoded>
+      <pubDate>Sat, 31 Jan 2026 13:34:33 +0000</pubDate>
+      <guid isPermaLink="false">filing-cabinet-20260131</guid>
+    </item>
   </channel>
 </rss>
